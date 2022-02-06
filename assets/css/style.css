@@ -14,7 +14,7 @@ body {
 	background-color: var(--bs-light);
 	font-family: "poppins";
 }
-
+/* sidebar */
 .sidebar {
 	width: 280px;
 	right: -300px;
@@ -26,6 +26,12 @@ body {
 	right: 0;
 	opacity: 100%;
 }
+.btn-sidebar {
+	color: var(--bs-light);
+	background-color: var(--brown-2);
+	border-color: var(--brown-2);
+}
+/* navbar */
 .uc-active {
 	background-color: var(--brown-3) !important;
 	color: var(--bs-light) !important;
@@ -34,27 +40,34 @@ body {
 	justify-content: flex-end;
 }
 .nav-custom {
-	background-color: var(--bs-light);
+	background-color: transparent;
+	transition: all .2s ease-out;
 }
-.nav-custom>div {
+.line-bottom {
 	border-bottom: 0.1rem solid #dee2e6 !important;
 }
 .nav-link-custom {
 	border-radius: 0.25rem;
 	color: var(--brown-3);
-	transition: all .2s ease-out;
+	transition: all 0.2s ease-out;
 }
 .nav-link-custom:not(.uc-active):hover {
 	color: var(--brown-5) !important;
 }
-.btn-sidebar {
-	color: var(--bs-light);
-	background-color: var(--brown-2);
-	border-color: var(--brown-2);
+div.navbar-brand {
+	letter-spacing: -0.5em;
+	opacity: 0;
 }
+.navbar-brand-show {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+		both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+/* footer */
 footer.footer {
 	border-top: 0.1rem solid #dee2e6 !important;
 }
+/* responsive */
 @media only screen and (min-width: 768px) {
 	.sidebar {
 		right: -300px !important;
@@ -70,21 +83,12 @@ footer.footer {
 		margin-left: 3rem !important;
 		margin-right: 3rem !important;
 	}
-	.nav-custom>div {
+	.nav-custom > div {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 		margin-left: 3rem !important;
 		margin-right: 3rem !important;
 	}
-}
-div.navbar-brand {
-	letter-spacing: -0.5em;
-	opacity: 0;
-}
-.navbar-brand-show {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
-		both;
-	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 @-webkit-keyframes tracking-in-expand {
 	0% {

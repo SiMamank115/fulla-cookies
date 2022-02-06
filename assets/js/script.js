@@ -19,3 +19,12 @@ document.onreadystatechange = () => {
         }
     }
 }
+document.onscroll = () => {
+    if(window.scrollY > 0) {
+        document.querySelector(".nav-custom > div").classList.add("line-bottom");
+        document.querySelector(".nav-custom").classList.add("bg-light");
+    } else {
+        document.querySelector(".nav-custom > div").classList.remove("line-bottom");
+        document.querySelector(".nav-custom").classList.remove("bg-light");
+    }
+}

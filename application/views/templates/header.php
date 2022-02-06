@@ -11,7 +11,7 @@
     <meta name="keywords" content="fulla cookies">
 </head>
 
-<body class="d-non flex-column h-100">
+<body class="d-none flex-column h-100">
     <nav class="navbar nav-custom navbar-expand-md sticky-top mx-0 pb-0">
         <div class="container-fluid pb-2 px-4">
             <div class="fs-4 navbar-brand ms-2">Fulla Cookies</div>
