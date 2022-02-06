@@ -12,15 +12,19 @@
 }
 body {
 	background-color: var(--bs-light);
+	font-family: "poppins";
 }
 
 .sidebar {
 	width: 280px;
-	right: -280px;
-	transition: all 0.2s ease-in-out;
+	right: -300px;
+	transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	opacity: 0%;
+	z-index: 1021;
 }
 .sidebar-show {
 	right: 0;
+	opacity: 100%;
 }
 .uc-active {
 	background-color: var(--brown-3) !important;
@@ -30,27 +34,75 @@ body {
 	justify-content: flex-end;
 }
 .nav-custom {
-	border-bottom: 0.1rem solid #dee2e6 !important;
 	background-color: var(--bs-light);
+}
+.nav-custom>div {
+	border-bottom: 0.1rem solid #dee2e6 !important;
 }
 .nav-link-custom {
 	border-radius: 0.25rem;
 	color: var(--brown-3);
-    font-weight: 450 !important;
+	transition: all .2s ease-out;
 }
 .nav-link-custom:not(.uc-active):hover {
 	color: var(--brown-5) !important;
 }
 .btn-sidebar {
 	color: var(--bs-light);
-    background-color: var(--brown-2);
-    border-color: var(--brown-2);
+	background-color: var(--brown-2);
+	border-color: var(--brown-2);
+}
+footer.footer {
+	border-top: 0.1rem solid #dee2e6 !important;
 }
 @media only screen and (min-width: 768px) {
 	.sidebar {
-		right: -280px !important;
+		right: -300px !important;
+		opacity: 0%;
 	}
 	.btn-sidebar {
 		display: none;
+	}
+	.nav-bottom {
+		flex-direction: row !important;
+	}
+	footer.footer {
+		margin-left: 3rem !important;
+		margin-right: 3rem !important;
+	}
+	.nav-custom>div {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-left: 3rem !important;
+		margin-right: 3rem !important;
+	}
+}
+div.navbar-brand {
+	letter-spacing: -0.5em;
+	opacity: 0;
+}
+.navbar-brand-show {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+		both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@-webkit-keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		letter-spacing: normal;
+	}
+}
+@keyframes tracking-in-expand {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		letter-spacing: normal;
 	}
 }

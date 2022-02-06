@@ -1,9 +1,10 @@
 <?php
-class Home extends CI_Controller {
+class Kontak extends CI_Controller {
     public function index() 
     {
+        $data["pill"] = 4;
         $this->load->view("templates/header");
-        $this->load->view("home/index");
+        $this->load->view("kontak/index",$data);
         $this->load->view("templates/footer");
     }
 }
