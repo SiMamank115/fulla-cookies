@@ -1,6 +1,7 @@
 <?php
-class Tentang_kami extends CI_Controller {
-    public function index() 
+class Tentang_kami extends CI_Controller
+{
+    public function index()
     {
         $data["pill"] = 2;
         $this->load->view("templates/header");

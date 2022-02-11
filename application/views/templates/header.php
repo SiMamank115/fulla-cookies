@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?= asset_url() ?>css/style.css">
+    <link rel="stylesheet" href="<?= asset_url() ?>/css/style.css">
     <title>Fulla Cookies</title>
     <meta name="keywords" content="fulla cookies">
+    <meta name="description" content="fulla cookies">
 </head>
 
 <body class="d-none flex-column h-100">
@@ -16,7 +17,7 @@
         <div class="container-fluid pb-2 px-4">
             <div class="fs-4 navbar-brand ms-2">Fulla Cookies</div>
             <button class="btn btn-sidebar py-1 px-2 text-primary" onclick="sidebar('show')" type="button">
-                <img src="<?= asset_url() ?>img/menu.svg" width="25" alt="Menu">
+                <img src="<?= asset_url() ?>/img/menu.svg" width="25" alt="Menu">
             </button>
             <div class="collapse navbar-collapse menu">
                 <div class="navbar-nav nav-top">
@@ -31,7 +32,7 @@
     <div class="d-flex shadow flex-column flex-shrink-0 p-3 bg-light position-fixed h-100 top-0 sidebar">
         <div class="d-flex justify-content-between align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
             <span class="fs-4">Menu</span>
-            <button class="btn me-3 text-primary" onclick="sidebar('show')" type="button"><img src="<?=asset_url()?>img/cross.svg" width="25" alt="Close"></button>
+            <button class="btn me-3 text-primary" onclick="sidebar('show')" type="button"><img src="<?=asset_url()?>/img/cross.svg" width="25" alt="Close"></button>
         </div>
         <hr>
         <div class="nav nav-pills flex-column mb-auto nav-sidebar">
