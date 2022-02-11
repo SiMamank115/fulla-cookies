@@ -9,6 +9,10 @@
 	--brown-3: #926c15;
 	--brown-4: #805b10;
 	--brown-5: #76520e;
+	--black-brown: #361f13;
+}
+.text-custom {
+	color: var(--black-brown) !important;
 }
 body {
 	background-color: var(--bs-light);
@@ -109,4 +113,19 @@ footer.footer {
 		opacity: 1;
 		letter-spacing: normal;
 	}
+}
+.btn-custom {
+	color: var(--bs-light);
+	border: .1rem solid var(--brown-3);
+	background-color: var(--brown-3);
+}
+
+.btn-custom:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem #926c1566;
+}
+
+.btn-custom:hover {
+	background-color: var(--brown-4);
+	color: var(--bs-light);
 }
