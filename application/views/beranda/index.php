@@ -1,5 +1,5 @@
 <div class="big-image w-100 position-absolute shadow"></div>
-<div class="content-1 mx-0 px-2" style="min-height: 100vh !important;">
+<div class="content-1 mx-0 px-2">
     <div class="hero d-flex justify-content-center mb-5 align-items-center">
         <h1 class="display-4 fw-bold text-custom hero-text">Fulla Cookies</h1>
     </div>
@@ -24,7 +24,9 @@
     .content-1>.sub {
         margin-top: 7rem;
     }
-
+    .content-1 {
+        min-height: 100vh !important;
+    }
     .sub-hero-text {
         color: #522500;
         text-shadow: 0 0 10px #ede0d4;
@@ -32,10 +34,11 @@
 
     .big-image {
         z-index: -1;
-        height: 100vh !important;
+        min-height: 100vh !important;
         background: url("<?= asset_url() ?>/img/bread.jpg");
         background-size: cover;
         background-position: center center;
+        transition: all .5s ease-in;
     }
 
     .hero-text {
@@ -90,6 +93,8 @@
         setTimeout(() => {
 
             document.querySelector(".hero-text").classList.add("hero-text-show")
+            document.querySelector(".big-image").style.height = `${document.querySelector(".content-1").clientHeight}px`;
+            console.log(document.querySelector(".content-1").clientHeight);
         }, 200);
     }
 </script>

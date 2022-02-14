@@ -1,6 +1,7 @@
 <?php
-class Kontak extends CI_Controller {
-    public function index() 
+class Kontak extends CI_Controller
+{
+    public function index()
     {
         $data["pill"] = 4;
         $this->load->view("templates/header");
