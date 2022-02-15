@@ -1,14 +1,6 @@
-<?php
-$e = $this->session->flashdata("terkirim");
-if(isset($e) && $e) {
-    echo "<script>alert('terkirim')</script>";
-} else if(isset($e)) {
-    echo "<script>alert('kasian')</script>";
-}
-?>
 <div class="container-md row mx-auto bg-light d-flex g-0 flex-wrap mt-4">
     <div class="col-lg-10 p-4">
-        <?=form_open("kontak/send")?>
+        <?= form_open("kontak/send") ?>
         <div class="form-floating mb-3">
             <input type="text" class="form-control custom-control" id="form_nama" placeholder="John Doe" name="nama">
             <label for="form_nama">Nama</label>
@@ -31,22 +23,42 @@ if(isset($e) && $e) {
     <div class="col-lg-2"></div>
 </div>
 <style>
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #666;
-        border-radius: 20px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #ddd;
-        border-radius: 20px;
-    }
-
     .custom-control:focus {
         border-color: #ddb892 !important;
         box-shadow: 0 0 0 0.25rem #edc53140 !important;
     }
 </style>
+<script>
+    function ready() {
+        if (typeof terkirim != "undefined") {
+            if (terkirim) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Selamat !',
+                    text: 'Pesan anda telah terkirim',
+                    buttonsStyling: false,
+                    customClass: {
+                        confirmButton: 'btn btn-custom'
+                    },
+                    background: '#f8f9fa',
+                    color: '#343a40',
+                    iconColor: '#dbb42c'
+                })
+            } else {
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Maaf',
+                    text: 'Pesan anda tidak terkirim karena suatu masalah',
+                    buttonsStyling: false,
+                    customClass: {
+                        confirmButton: 'btn btn-custom'
+                    },
+                    background: '#f8f9fa',
+                    color: '#343a40',
+                    iconColor: '#dc3545'
+                })
+            }
+        }
+    }
+</script>
