@@ -1,19 +1,19 @@
 <div class="container-md row mx-auto bg-light d-flex g-0 flex-wrap mt-4">
     <div class="col-lg-10 p-4">
         <?= form_open("kontak/send") ?>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control custom-control" id="form_nama" placeholder="John Doe" name="nama">
+        <div class="form-floating shadow-sm mb-3">
+            <input type="text" class="form-control custom-control" autocomplete="off" id="form_nama" placeholder="John Doe" name="nama">
             <label for="form_nama">Nama</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating shadow-sm mb-3">
             <input type="email" required class="form-control custom-control" id="form_email" placeholder="john@gmail.com" name="email">
             <label for="form_email">Email</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating shadow-sm mb-3">
             <input type="number" required class="form-control custom-control" id="form_nomor" placeholder="087734529XX" name="nomor">
             <label for="form_nomer">Nomor telp.</label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating shadow-sm mb-3">
             <textarea style="height: 100px;" type="number" required class="form-control custom-control" id="form_nomer" placeholder="" name="pesan"></textarea>
             <label for="form_nomer">pesan</label>
         </div>

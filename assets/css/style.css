@@ -1,3 +1,6 @@
+.baloo {
+	font-family: "Baloo bold" !important;
+}
 ::-webkit-scrollbar {
 	width: 12px;
 }
@@ -58,7 +61,7 @@ body {
 }
 .nav-custom {
 	background-color: transparent;
-	transition: all .2s ease-out;
+	transition: all 0.2s ease-out;
 }
 .line-bottom {
 	border-bottom: 0.1rem solid #dee2e6 !important;
@@ -129,7 +132,7 @@ footer.footer {
 }
 .btn-custom {
 	color: var(--bs-light);
-	border: .1rem solid var(--brown-3);
+	border: 0.1rem solid var(--brown-3);
 	background-color: var(--brown-3);
 }
 

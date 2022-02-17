@@ -13,7 +13,7 @@
 </div>
 <style>
     .bg-custom {
-        background-color: #f0efeb;
+        background-color: #fff;
     }
     @media only screen and (min-width: 768px) {
         a.btn-custom {
