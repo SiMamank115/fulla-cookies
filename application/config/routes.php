@@ -55,3 +55,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route["tentang-kami"] = "tentang_kami/index";
 $route["produk"] = "produk/index";
 $route["kontak"] = "kontak/index";
+$route["admin"] = "admin/index";

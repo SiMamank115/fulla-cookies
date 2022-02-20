@@ -1,5 +1,5 @@
 <div class="mt-4 container-fluid content shadow rounded-3" style="max-width: 500px;">
-    <?= form_open("beranda/login") ?>
+    <?= form_open("admin/login") ?>
     <div class="form-floating mb-3 mt-3">
         <input type="text" class="form-control custom-control" autocomplete="off" id="form_nama" placeholder="nama" name="name">
         <label for="form_nama">Nama</label>
@@ -10,7 +10,7 @@
         <label for="form_password">Password</label>
         <p class="text-danger"><?=$this->session->flashdata("password")?></p>
     </div>
-    <input class="btn btn-custom float-end mb-3" type="submit" name="submit" value="Kirim !">
+    <input class="btn btn-custom float-end mb-3" type="submit" name="submit" value="Masuk !">
     </form>
 </div>
 <style>
