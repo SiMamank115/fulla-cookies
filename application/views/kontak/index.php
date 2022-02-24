@@ -14,8 +14,8 @@
             <label for="form_nomer">Nomor telp.</label>
         </div>
         <div class="form-floating shadow-sm mb-3">
-            <textarea style="height: 100px;" type="number" required class="form-control custom-control" id="form_nomer" placeholder="" name="pesan"></textarea>
-            <label for="form_nomer">pesan</label>
+            <textarea style="height: 100px;" type="number" required class="form-control custom-control" id="form_pesan" placeholder="" name="pesan"></textarea>
+            <label for="form_pesan">pesan</label>
         </div>
         <input class="btn btn-custom float-end" type="submit" name="submit" value="Kirim !">
         </form>

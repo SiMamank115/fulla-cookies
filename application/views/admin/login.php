@@ -27,3 +27,8 @@
         background-color: var(--bs-white) !important;
     }
 </style>
+<script>
+    function ready() {
+        document.querySelector("input#form_nama").focus();
+    }
+</script>
